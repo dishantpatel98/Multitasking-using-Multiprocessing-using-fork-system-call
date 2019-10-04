@@ -173,7 +173,7 @@ int main()
 //and return - waitpid() is a blocking system call 
 //API, which may block, for certain scenarios   
 
-    ret = waitpid(-1,&status,0);
+    ret = waitpid(-1,&status,0); 
     if(ret>0){
 //if waitpid() successfully cleans-up a child process, 
 //it will collect and copy the status code,in 
